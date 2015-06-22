@@ -1,0 +1,45 @@
+ 2012  cd lp
+ 2013  ls
+ 2014  git status
+ 2015  cd..
+ 2016  cp ../2.html ./
+ 2017  cp ../1.js ./
+ 2018  ls
+ 2019  firefox 2.html 
+ 2020  subl 2.html 1.js 
+ 2021  git status
+ 2022  git add .
+ 2023  git status
+ 2024  git log
+ 2025  git commit -m
+ 2026  git commit -m 'phla commit'
+ 2027  git config --global user.email "amanrai25796@gmail.com"
+ 2028  git commit -m 'phla commit'
+ 2029  git log
+ 2030  git log --oneline
+ 2031  git status
+ 2032  git add .
+ 2033  status
+ 2034  git status
+ 2035  git commit -m 'first change'
+ 2036  git log -oneline
+ 2037  git log --oneline
+ 2038  cl
+ 2039  ls
+ 2040  git remote add new1 https://github.com/bhumihar/Lp.git
+ 2041  git push new1
+ 2042  git config --global push.default matching
+ 2043  git push new1
+ 2044  git push new1 master
+ 2045  git pull  https://github.com/bhumihar/Lp.git
+ 2046  history -10
+ 2047  history -n10
+ 2048  history -n 10
+ 2049  cl
+ 2050  history | tail -n 25
+ 2051  git log oneline
+ 2052  git log --oneline
+ 2053  touch tmp
+ 2054  git status
+ 2055  history | tail -n 40
+ 2056  history | tail -n 45 > tmp
