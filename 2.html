@@ -1,0 +1,95 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hello ZingChart World</title>
+  <script src="1.js"></script>
+  <script>
+  /*  var chartData={
+      "type": "area",
+      "scale-x":{
+        "values":"0:10:1",
+    // "values":[0,2,5]
+  },
+  //Comment
+  "preview":{
+    "handle-bottom":{"background-color":"blue"},
+  }
+  "series": [
+  { "values": [4,2,0]},
+  {"values":[3,2.4,1.8,1.2,0.6,0]}
+
+
+  ]
+
+};*/
+var chartData = {
+"graphset":[
+    {
+        "type":"area",
+        "scale-x":{
+            "zooming":true
+        },
+        "scale-y":{
+            "zooming":true
+        },
+        "preview":{
+            "position":"50% 100%",
+            "margin":"10,50,10,50",
+            "height":50
+        },
+        "chart":{
+            "margin-bottom":100
+        },
+        "series":[
+            {
+                "values":[11,26,7,44,11,28,42,26,13,32,12,4,21,11,43,39]
+            },
+            
+        ]
+    }
+]
+}
+
+
+/*
+var chartData = {
+  "graphset":[
+  {
+    "type":"area",
+    "scale-x":{
+      "zooming":true
+    },
+    "scale-y":{
+      "zooming":true
+    },
+    "preview":{
+      "position":"50% 100%",
+      "margin":"10,50,10,50",
+      "height":50
+    },
+    "chart":{
+      "margin-bottom":100
+    },
+    "series":[
+    {
+      "values":[11,26,7,44,11,28,42,26,13,32,12,4,21,11,43,39]
+    },
+
+    ]
+  }
+  ]
+}*/
+window.onload=function(){
+  zingchart.render({
+    id:'chartDiv',
+    height:400,
+    width:600,
+    data:chartData
+  });
+};
+</script>
+</head>
+<body>
+  <div id='chartDiv'></div>
+</body>
+</html>
