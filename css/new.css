@@ -62,9 +62,9 @@ html,body{
 	margin-top: 20px;
 	position: relative;
 	background: #5fb085;
-	-webkit-border-radius: 28;
-	-moz-border-radius: 28;
-	-ms-border-radius: 28;
+	-webkit-border-radius: 28px;
+	-moz-border-radius: 28px;
+	-ms-border-radius: 28px;
 	border-radius: 28px;
 	font-family: Calibri Regular;
 	color: #ffffff;
