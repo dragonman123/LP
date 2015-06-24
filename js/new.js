@@ -2,7 +2,6 @@
 // var A=[3,2.4,1.8,1.2,0.6,0] // A is the line with max x intercept
 // var B=[4,2,0]; // else B
 
-var gcount=0;
 var miny=0, maxy=0;
 var yString;
 var flag1=0;
@@ -31,7 +30,7 @@ function drawChart(){
 			},
 
 			"chart":{
-				"margin-bottom":100
+				"margin-bottom":50
 			},
 			"series":[
 
@@ -47,7 +46,7 @@ function drawChart(){
 	}
 	zingchart.render({
 		id:'chartDiv',
-		height:400,
+		height:350,
 		width:600,
 		data:chartData
 	});
@@ -65,8 +64,7 @@ function fillArray(array,a,b,c){
 			maxy=y;
 		}
 	}
-	gcount++;
-	if(gcount==2){
+	if(flag1==1 && flag2==1){
 		maxy = parseInt(maxy) + 1;
 		if(maxy > 10){
 			maxy=10;
@@ -78,25 +76,21 @@ function fillArray(array,a,b,c){
 }
 
 function myFunc(a,b,c){
-		flag1=1;
-		a=$("#input" + a).val();
-		b=$("#input" + b).val();
-		c=$("#input" + c).val();
-		fillArray(A,a,b,c);
-		a+=3;
-		b+=3;
-		c+=3;
-		a=$("#input" + a).val();
-		b=$("#input" + b).val();
-		c=$("#input" + c).val();
-		flag2=1;
-		fillArray(B,a,b,c);
-
+	flag1=1;
+	a=$("#input" + a).val();
+	b=$("#input" + b).val();
+	c=$("#input" + c).val();
+	fillArray(A,a,b,c);
+	a=4;
+	b=5;
+	c=6;
+	a=$("#input" + a.toString()).val();
+	b=$("#input" + b.toString()).val();
+	c=$("#input" + c.toString()).val();
+	flag2=1;
+	fillArray(B,a,b,c);
 	//Driver function to establish arrays A and B
 	//First the A array.
-	/*a=$("#input1").val()
-	b=$("#input2").val()
-	c=$("#input3").val()
 	console.log(a);
-*/
+
 }
