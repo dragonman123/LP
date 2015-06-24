@@ -78,29 +78,25 @@ function fillArray(array,a,b,c){
 }
 
 function myFunc(a,b,c){
-	// a=$(d);
-
-	if(a==1){
 		flag1=1;
 		a=$("#input" + a).val();
 		b=$("#input" + b).val();
 		c=$("#input" + c).val();
 		fillArray(A,a,b,c);
-	}
-	else{
-
+		a+=3;
+		b+=3;
+		c+=3;
 		a=$("#input" + a).val();
 		b=$("#input" + b).val();
 		c=$("#input" + c).val();
 		flag2=1;
 		fillArray(B,a,b,c);
-	}
 
 	//Driver function to establish arrays A and B
 	//First the A array.
-	a=$("#input1").val()
+	/*a=$("#input1").val()
 	b=$("#input2").val()
 	c=$("#input3").val()
 	console.log(a);
-
+*/
 }

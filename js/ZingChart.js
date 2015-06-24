@@ -14179,7 +14179,7 @@ ZC.PX = ZC.HM.BM({
             }
             p = 126;
             n = 22;
-            e = '<a title="JavaScript Charts by ZingChart" style="color:#036 !important;font-size:11px !important;display:block !important;opacity:1 !important;" href="">By Aman and Aalekh</a>';
+            e = '<a title="" style="color:#036 !important;font-size:11px !important;display:block !important;opacity:1 !important;" href="">By Aman and Aalekh</a>';
             var o, y;
             switch (x) {
                 case "br":
@@ -15221,7 +15221,7 @@ ZC.PX = ZC.HM.BM({
     A0S: function() {
         ZC.O.F0(this.J + "-blocker")
     },
-    A6W: function() {
+    /*A6W: function() {
         var e = this;
         ZC.AM.BY("about_show", e, e.FD());
         ZC.O.IP({
@@ -15254,7 +15254,7 @@ ZC.PX = ZC.HM.BM({
             ZC.O.F0([e.J + "-about", e.J + "-about-mask"])
         }
         ZC.A3("#" + e.J + "-about-close").bind("click", a)
-    },
+    },*/
     LJ: function(e, d) {
         var a = this;
         if (ZC.AM.A4O("error", a)) {
@@ -16512,7 +16512,7 @@ ZC.PX.prototype.A2B = function() {
 ZC.PX.prototype.A36 = function() {
     var b = this;
     if (b.I < 300 || b.F < 300) {
-        window.open("http://www.zingchart.com/support/", "", "");
+        // window.open("http://www.zingchart.com/support/", "", "");
         return
     }
     var a = ZC.O.IP({
@@ -16559,8 +16559,8 @@ ZC.PX.prototype.A36 = function() {
         e += "****END";
         var n = ZC.O.A8N(ZC.AH(b.J + "-bugreport"));
         var m = n.createElement("FORM");
-        m.action = "http://www.zingchart.com/support/submitreportH5.php";
-        m.method = "post";
+        // m.action = "http://www.zingchart.com/support/submitreportH5.php";
+        // m.method = "post";
         n.body.appendChild(m);
         var k = n.createElement("INPUT");
         k.type = "text";
