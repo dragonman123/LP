@@ -59,9 +59,12 @@ html,body{
 	margin-right: 10px;
 }
 #buttonReset{
+	padding: 0;
+	margin: 0;
 	/*margin-right: 800px;*/
 	float: left;
 	margin-left: 158px;
+	margin-top: -20px;
 }
 .buttons{
 	/*h*/
@@ -100,7 +103,8 @@ html,body{
 h2{
 	margin:0px;
 	padding:0px;
-	width: 300px;
+	width: 500px;
+	margin-left: 100px;
 
 }
 #chartDiv{
