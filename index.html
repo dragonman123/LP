@@ -24,14 +24,14 @@
 					</li>
 					<ul class="extraButtons">
 					<li><button id="button3" class="buttons">Apply</button></li>
-					<li><button id="button2" class="buttons">Reset</button></li>
+					<li><button id="button2" class="buttons" onclick='location.reload(true)'>Reset</button></li>
 					<ul>
 
 				</ul>
 			</div>
 		</div>
 		<div class="inputValues">
-			<ul class="inputList">
+			<ul class="inputList" id="inputList1">
 				<h2>Enter First Line</h2>
 				<li>
 					<input id="input1" onfocus='this.value=""' onblur='if(this.value=="")this.value="a1"' class="inputValue" type="text" name="A" value="a1">
@@ -40,10 +40,10 @@
 					<input id="input2" onfocus='this.value=""' onblur='if(this.value=="")this.value="b1"' class="inputValue" type="text" name="A" value="b1">
 				</li>
 				<li><input id="input3" onfocus='this.value=""' onblur='if(this.value=="")this.value="c1"' class="inputValue" type="text" name="A" value="c1"></li>
-				<li><button id="button1" class="buttons" onclick='myFunc(1,2,3)'>Apply</button></li>
+				<li><button id="button1" class="buttons" onclick='myFunc(1,2,3,0)'>Apply</button></li>
 			</ul>
 			<br/>
-			<ul class="inputList">
+			<ul class="inputList" id="inputList2">
 				<h2>Enter Second  Line</h2>
 				<li>
 					<input id="input4" onfocus='this.value=""' onblur='if(this.value=="")this.value="a2"' class="inputValue" type="text" name="A" value="a2">
@@ -52,7 +52,10 @@
 					<input id="input5" onfocus='this.value=""' onblur='if(this.value=="")this.value="b2"' class="inputValue" type="text" name="A" value="b2">
 				</li>
 				<li><input id="input6" onfocus='this.value=""' onblur='if(this.value=="")this.value="c2"' class="inputValue" type="text" name="A" value="c2"></li>
-				<li><button id="button2" class="buttons" onclick='location.reload(true)'>Reset</button></li>
+				<li><button id="button2" class="buttons" onclick='myFunc(4,5,6,1)'>Apply</button></li>
+			</ul>
+			<ul class="inputList">
+				<li  id="buttonReset"><button class="buttons" onclick='location.reload(true)'>Reset</button></li>
 			</ul>
 			<br/>
 		<!-- <h2>Enter Third  Line</h2>
@@ -67,9 +70,11 @@
 		</ul> -->
 	</div>
 </div>
-<div id="paragraph1" class="paragraph"></div>
-<div id="paragraph2" class="paragraph"></div>
-<div id="paragraph3" class="paragraph"></div>
-<div id="paragraph" class="paragraph"></div>
+<ul class="paragraph">
+<li id="paragraphMain"></li>
+<li id="paragraph1"></li>
+<li id="paragraph2"></li>
+<li id="paragraph3"></li>
+</ul>
 </body>
 </html>

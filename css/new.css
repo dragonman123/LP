@@ -58,7 +58,11 @@ html,body{
 	float: left;
 	margin-right: 10px;
 }
-
+#buttonReset{
+	/*margin-right: 800px;*/
+	float: left;
+	margin-left: 158px;
+}
 .buttons{
 	/*h*/
 	/*background-color: red;*/
@@ -149,10 +153,14 @@ h2{
 	margin: 0;
 	/*background-color: black;*/
 }
-#paragraph{
-	border: 1px solid black;
+.paragraph{
+	/*display: none;*/
+	margin-top: 277px;
+}
+.paragraph li{
+	border:  1px solid black;
 	display: none;
-	width: 300px;
+	width: 500px;
 	background-color: orange;
 	left: 0;
 	right: 0;
@@ -160,9 +168,15 @@ h2{
 	bottom: 0;
 	padding: 0;
 	margin: auto;
-	margin-top:300px;
+	margin-top:3px;
 	text-align: center;
 	height: 60px;
 	vertical-align: middle;
+	border-radius: 20px;
 	line-height: 60px;
+	color: #000;
+
+}
+#paragraphMain{
+	background-color: #5fb085;
 }
