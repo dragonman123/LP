@@ -1,4 +1,4 @@
-<html>
+<!-- <html> -->
 <head>
 	<meta charset="utf-8">
 	<title>Linear Programming</title>
@@ -10,30 +10,66 @@
 </head>
 <body>
 	<h1 align="center"><u>Linear Programming</u></h1>
+	<div id="main">
+		<div id="upper">
+			<div id='chartDiv'> </div>
+			<div id="compositeFunction">
+				<h2 id="compositeWala">Enter Third  Line</h2>
+				<ul id="ulcompositeFunction">
+					<li>
+						<input id="input7" onfocus='this.value=""' onblur='if(this.value=="")this.value="a3"' class="inputValue" type="text" name="A" value="a2">
+					</li>
+					<li>
+						<input id="input8" onfocus='this.value=""' onblur='if(this.value=="")this.value="b3"' class="inputValue" type="text" name="A" value="b2">
+					</li>
+					<ul class="extraButtons">
+					<li><button id="button3" class="buttons">Apply</button></li>
+					<li><button id="button2" class="buttons">Reset</button></li>
+					<ul>
 
-	<div id='chartDiv'> </div>
-	<div class="inputValues">
-		<ul class="inputList">
+				</ul>
+			</div>
+		</div>
+		<div class="inputValues">
+			<ul class="inputList">
+				<h2>Enter First Line</h2>
+				<li>
+					<input id="input1" onfocus='this.value=""' onblur='if(this.value=="")this.value="a1"' class="inputValue" type="text" name="A" value="a1">
+				</li>
+				<li>
+					<input id="input2" onfocus='this.value=""' onblur='if(this.value=="")this.value="b1"' class="inputValue" type="text" name="A" value="b1">
+				</li>
+				<li><input id="input3" onfocus='this.value=""' onblur='if(this.value=="")this.value="c1"' class="inputValue" type="text" name="A" value="c1"></li>
+				<li><button id="button1" class="buttons" onclick='myFunc(1,2,3)'>Apply</button></li>
+			</ul>
+			<br/>
+			<ul class="inputList">
+				<h2>Enter Second  Line</h2>
+				<li>
+					<input id="input4" onfocus='this.value=""' onblur='if(this.value=="")this.value="a2"' class="inputValue" type="text" name="A" value="a2">
+				</li>
+				<li>
+					<input id="input5" onfocus='this.value=""' onblur='if(this.value=="")this.value="b2"' class="inputValue" type="text" name="A" value="b2">
+				</li>
+				<li><input id="input6" onfocus='this.value=""' onblur='if(this.value=="")this.value="c2"' class="inputValue" type="text" name="A" value="c2"></li>
+				<li><button id="button2" class="buttons" onclick='location.reload(true)'>Reset</button></li>
+			</ul>
+			<br/>
+		<!-- <h2>Enter Third  Line</h2>
+		<ul class="inputlist">
 			<li>
-				<input id="input1" onfocus='this.value=""' onblur='if(this.value=="")this.value="a1"' class="inputValue" type="text" name="A" value="a1">
+				<input id="input7" onfocus='this.value=""' onblur='if(this.value=="")this.value="a3"' class="inputValue" type="text" name="A" value="a2">
 			</li>
 			<li>
-				<input id="input2" onfocus='this.value=""' onblur='if(this.value=="")this.value="b1"' class="inputValue" type="text" name="A" value="b1">
+				<input id="input8" onfocus='this.value=""' onblur='if(this.value=="")this.value="b3"' class="inputValue" type="text" name="A" value="b2">
 			</li>
-			<li><input id="input3" onfocus='this.value=""' onblur='if(this.value=="")this.value="c1"' class="inputValue" type="text" name="A" value="c1"></li>
-			<li><button id="button1" class="buttons" onclick='myFunc(1,2,3)'>Apply</button></li>
-		</ul>
-		<br/>
-		<ul class="inputList">
-			<li>
-				<input id="input4" onfocus='this.value=""' onblur='if(this.value=="")this.value="a2"' class="inputValue" type="text" name="A" value="a2">
-			</li>
-			<li>
-				<input id="input5" onfocus='this.value=""' onblur='if(this.value=="")this.value="b2"' class="inputValue" type="text" name="A" value="b2">
-			</li>
-			<li><input id="input6" onfocus='this.value=""' onblur='if(this.value=="")this.value="c2"' class="inputValue" type="text" name="A" value="c2"></li>
-			<li><button id="button2" class="buttons" onclick='location.reload(true)'>Reset</button></li>
-		</ul>
+			<li><input id="input9" onfocus='this.value=""' onblur='if(this.value=="")this.value="c3"' class="inputValue" type="text" name="A" value="c2"></li>
+		</ul> -->
 	</div>
+</div>
+<div id="paragraph1" class="paragraph"></div>
+<div id="paragraph2" class="paragraph"></div>
+<div id="paragraph3" class="paragraph"></div>
+<div id="paragraph" class="paragraph"></div>
 </body>
 </html>
