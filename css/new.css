@@ -101,6 +101,7 @@ html,body{
 	cursor: pointer;
 }
 h2{
+
 	margin:0px;
 	padding:0px;
 	width: 500px;
@@ -110,6 +111,9 @@ h2{
 #chartDiv{
 	width:600px;
 	float:left;
+}
+#chartDiv:hover{
+	cursor:  crosshair;
 }
 #compositeFunction{
 	width:300px;

@@ -14179,7 +14179,7 @@ ZC.PX = ZC.HM.BM({
             }
             p = 126;
             n = 22;
-            // e = '<a title="" style="color:#036 !important;font-size:11px !important;display:block !important;opacity:1 !important;">By Aman and Aalekh</a>';
+            e = '<a title="By Aman & Aalekh" style="margin-right:100px !important;text-align: left !important;float:left !important;color:#036 !important;font-size:12px !important;display:block !important;opacity:1 !important;">ZoomIn / ZoomOut</a>';
             var o, y;
             switch (x) {
                 case "br":
@@ -14215,7 +14215,7 @@ ZC.PX = ZC.HM.BM({
                     }, m.A5);
                     ZC.AH(b).style.cursor = "pointer";
                     m.SH = function() {
-                        window.top.location.href = "http://www.zingchart.com/?utm_source=javascript-chart&utm_medium=javascript-chart&utm_campaign=javascript-chart"
+                        window.top.location.href = ""
                     };
                     ZC.A3("#" + b).bind("click", m.SH)
                 }
